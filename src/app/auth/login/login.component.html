@@ -1,0 +1,57 @@
+<mat-card class="login-card">
+  <mat-card-content>
+    <div class="login-wrapper">
+      <span class="heading-title" style="margin-top: 24px; margin-bottom: 34px;"
+        >Вход</span
+      >
+
+      <button class="auth-button" matRipple>
+        <i class="fab fa-facebook-square"></i>Продължи с FACEBOOK
+      </button>
+      <div
+        style="font-size: 20px; color: #707070; margin-top: 5px; margin-bottom: 5px;"
+      >
+        или
+      </div>
+
+      <form
+        (ngSubmit)="submit()"
+        class="login-form w-100"
+        [formGroup]="loginForm"
+      >
+        <mat-form-field class="w-100" appearance="outline">
+          <mat-label>Потребителско име</mat-label>
+          <input type="text" formControlName="username" matInput />
+        </mat-form-field>
+        <mat-form-field class="w-100" appearance="outline">
+          <mat-label>Парола</mat-label>
+          <input type="password" formControlName="password" matInput />
+        </mat-form-field>
+        <button mat-raised-button class="pink-gradient login-button">
+          ВХОД
+        </button>
+
+        <div class="remember-me">
+          <mat-checkbox formControlName="rememberMe"
+            >Запомни за 30 дни</mat-checkbox
+          >
+        </div>
+        <div class="forgotten-password">
+          <a href="">забравена парола</a>
+        </div>
+      </form>
+
+      <div class="actions w-100">
+        <div class="register" style="margin-top: 35px;   margin-bottom:45px">
+          <a
+            routerLink="/auth/register"
+            class="heading-title"
+            mat-button
+            style="font-size: 25px"
+            >РЕГИСТРИРАЙ СЕ</a
+          >
+        </div>
+      </div>
+    </div>
+  </mat-card-content>
+</mat-card>

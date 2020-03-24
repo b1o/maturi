@@ -1,4 +1,57 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+.heading-title {
+  font-size: 40px;
+  color: #3f25b6;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.auth-button {
+  padding: 10px;
+  color: white;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #425eac;
+  border-radius: 5px;
+  border: 1px solid;
+
+  i {
+    margin-right: 10px;
+    font-size: 45px;
+  }
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.pink-gradient {
+  background: linear-gradient(
+    90deg,
+    #fe907e 0%,
+    #fe7b7f 25%,
+    #fe5581 75%,
+    #fe5581 100%
+  );
+  color: white;
+}
+
+.mat-checkbox-layout {
+  white-space: normal !important;
+  display: flex;
+  justify-content: flex-start !important;
+}
